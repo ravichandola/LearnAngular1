@@ -1,0 +1,15 @@
+{
+  "name": "angular_learning",
+  "version": "1.0.0",
+  "description": "first angular learnings",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ravi",
+  "license": "ISC"
+}

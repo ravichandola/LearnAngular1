@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>This is HTML Form</title>
+<style type="text/css">
+  h1{
+    color: white;
+    background-color: #E14607;
+    padding-bottom: 10px;
+    border-bottom: 2px ;
+
+
+        display: block;
+    font-size: 2em;
+    -webkit-margin-before: 1.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+
+  }
+
+</style>
+
+
+
+<body style="background-color: #6507e1;" data-ng-app='myFirstModule' data-ng-controller='myFirstController'>
+  <meta charset="utf-8">
+<h1>STUDENT INFORMATION FORM</h1>
+
+  <form>
+{{firstName}}
+
+  <div>  First name:<br>
+    <input type="text" name="firstname" data-ng-model='firstName'><br></div>
+    Last name:<br>
+    <input type="text" name="lastname" data-ng-model='lastName'><br>
+
+    <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+
+
+    Father's Name:<br>
+    <input type="text" name="father'sname" data-ng-model='fathername'><br>
+    Mother's Name:<br>
+    <input type="text" name="mother name" data-ng-model='mothername'><br>
+    Phone :<br>
+    <input type="tel" name="phone" data-ng-model='phone'><br>
+    Address:<br>
+    <input type="text" name="address" data-ng-model='address1'><br>
+  <div>  <input type="text" name="address" data-ng-model='address2'></div>
+  <br><input type="submit" value="Submit" data-ng-click='submitMe()'>
+
+  </form>
+
+
+</body>
+<script src="./node_modules/angular/angular.min.js"></script>
+<script src="./app.js"></script>
+</html>
